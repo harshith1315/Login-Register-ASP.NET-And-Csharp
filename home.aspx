@@ -26,7 +26,7 @@
     <form id="form1" runat="server">
         <div>
             <h1>HELLO</h1>
-            <asp:Button ID="btn" runat="server" Text="Submit" OnClick="Logout" />
+            <asp:Button ID="btn" runat="server" Text="Logout" OnClick="Logout" />
         </div>
     </form>
 </body>
