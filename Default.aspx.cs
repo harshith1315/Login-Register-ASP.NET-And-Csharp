@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Web.UI;
@@ -13,7 +13,6 @@ namespace login_register
             {
                 Response.Redirect($"home.aspx");
             }
-
 
         }
 
@@ -33,10 +32,10 @@ namespace login_register
                 }
                 else
                 {
-                    error.InnerText = "Invalid";
                     error.Visible = true;
-                    Response.Redirect($"Default.aspx");
-                }
+                    error.InnerText = "Invalid";
+                    error.Attributes.Add("style", "color: red;");
+            }
             
         }
 
